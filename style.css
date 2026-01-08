@@ -44,3 +44,107 @@
 .btn:hover {
     background: green;
 }
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url("hero-bg.png")
+              center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.banner-content {
+  position: relative;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: green;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.badge .dot {
+  width: 8px;
+  height: 8px;
+  background: green;
+  border-radius: 50%;
+}
+
+
+.banner-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.banner-content h1 span {
+  color: green;
+}
+
+
+.banner-content p {
+  font-size: 18px;
+  color: ghostwhite;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 14px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn.primary {
+  background: green;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: green;
+}
+
+.btn.outline {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
+.btn.outline:hover {
+  background: white;
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
