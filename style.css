@@ -193,6 +193,7 @@
     flex: 1;
     max-width: 250px;
     text-align: center;
+  margin-top: 20px;
 }
 
 .icon-container {
@@ -348,7 +349,7 @@
 
 }
 
-.check-listli::before {
+.check-list::before {
 
   font-weight: 900;
   position: absolute;
@@ -406,6 +407,7 @@
     background-color: #001931;
     padding: 20px 50px;
     color: white;
+    border: 1px solid;
 }
 
 .footer-container {
@@ -417,10 +419,12 @@
     margin-left: auto;
     margin-right: auto;
 }
+ 
 
 .footer-logo {
     display: flex;
     align-items: center;
+  
 }
 
 .logo-icon {
@@ -435,6 +439,7 @@
     font-size: 24px;
     font-weight: bold;
     line-height: 1;
+    
 }
 
 .logo-subtitle {
@@ -450,17 +455,10 @@
     color: #eee;
 }
 
-.social-icons a {
-    color: #fff;
-    font-size: 16px;
-    margin-left: 15px;
-    text-decoration: none;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
+
 
 .social-icons a:hover {
-     opacity: 1;
+     opacity: 1%;
 }
 
 .social-icons a {
@@ -484,7 +482,7 @@
 .footer-bottom p {
     font-size: 12px;
     margin: 0;
-    color: #aaa;
+    color: #ffeded;
 }
 
 .social-icons a{
@@ -504,17 +502,11 @@
   background: #007bff;
 }
 
-@media (max-width: 600px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
+.social-icons a img {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
 
-    .footer-logo {
-        margin-bottom: 15px;
-    }
-
-    .social-icons a {
-        margin: 0 8px;
-    }
 }
+
